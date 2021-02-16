@@ -1,0 +1,603 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;1,300&display=swap');
+* {
+    outline: none !important;
+    scroll-behavior: smooth;
+}
+
+/*------------------------------BODY------------------------------*/
+
+body {
+    font-family: 'Poppins', sans-serif;
+    /*This helps to make all the font in the body into poppins which i have imported from google*/
+}
+
+p {
+    font-size: 1.15rem;
+    /*Sets the paragraph font size to 1.15 rem across all the websites*/
+}
+
+/*------------------------------NAVIGATION BAR------------------------------*/
+
+header {
+    position: relative;
+    z-index: 10000000;
+    /*I used a high z-index numberical value so that the header will always be the one protruding out*/
+}
+
+.navbar {
+    background: transparent !important;
+    transition: 0.5s;
+}
+
+.navbar.scrolled {
+    background: #000 !important;
+    transition: 0.5s;
+    /*When the user scrolls, this will immediately change to a full background of black*/
+}
+
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+    color: #000;
+    background: #fff;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus {
+    color: rgba(255, 255, 255, 1);
+}
+
+.navbar-light .navbar-brand, .navbar-light .navbar-brand:hover, .navbar-light .navbar-brand:focus, .navbar-light .navbar-brand:visited {
+    color: rgba(255, 255, 255, 1);
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+/*------------------------------JUMBROTRON------------------------------*/
+
+.height50p {
+    height: 50vh;
+    /*Gives the banner a view height of 50 percent of the user scrint - good for strong effects*/
+}
+
+.height100p {
+    height: 100vh;
+    /*Gives the banner a view height of 100 percent of the user scrint - good for strong effects*/
+}
+
+.h100 {
+    height: 100%;
+    /*100 of the .height100p*/
+}
+
+.banner {
+    position: relative;
+    top: 0;
+    width: 100%;
+    /*Essentially maximises the entire width*/
+    height: 100vh;
+    /*Essentially maximises the entire height of the user screen*/
+    background: url(../Pictures/0.Common-Folder/ThematicFiller-Mountains.jpg);
+    /*Inset here to change the pictures in the future*/
+    background-size: cover;
+    margin-bottom: 0;
+}
+
+.banner:before, .sec2:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /*Essentially maximises the entire width*/
+    height: 400px;
+    /*height will be inserted before the banner,sec2,and contact*/
+    background: linear-gradient(#000, transparent);
+    /*Because some image transitions from 1 to another might be very sudden, i used gradient to soften the transition*/
+    pointer-events: none;
+}
+
+.banner:after, .sec2:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    /*Essentially maximises the entire width*/
+    height: 400px;
+    /*height will be inserted after the banner,sec2*/
+    background: linear-gradient(360deg, #000, transparent);
+    /*Because some image transitions from 1 to another might be very sudden, i used gradient to soften the transition*/
+    pointer-events: none;
+}
+
+/*------------------------------SECTION------------------------------*/
+
+.contentBox {
+    /*ContentBox actually acts like placeBox*/
+    position: relative;
+    display: flex;
+    justify-content: center;
+    text-transform: capitalize;
+    /*Transform all the text to big letters*/
+    align-items: center;
+    text-align: center;
+    /*Aligns all the text and imagesto the center*/
+    z-index: 10;
+    /*Ensure text have a pirority over the preceding background imgages*/
+}
+
+.contentBox h1 {
+    font-weight: 800;
+    color: #fff;
+    /*Gives all h1 element a very strong impact by having a font-weight of 800 and a color of white*/
+    text-transform: uppercase;
+    font-size: 5rem;
+    /*text-transform help to make everything more bold, more strong and impactful;*/
+}
+
+.contentBox p {
+    color: #fff;
+    font-size: 1.3rem;
+    /*Gives everything inside content box a very nice white color and a bigger font size relative
+    to the rest of the text a fontsize of 1.3rem!*/
+}
+
+.sec1 {
+    padding: 100px 0;
+    background: #000;
+    /*can be used to create iamges inside here*/
+}
+
+.headerText {
+    color: #fff
+    /*Gives all elements inside headertext a very nice and creamy white color*/
+}
+
+.headerText h2 {
+    font-size: 2.5rem;
+    /*header text for "What our users says" in index and Additional info in 3.pricing.html gave a font size of 2.5rem*/
+    margin-bottom: 20px;
+    /*Always ensure that the content after headerText have breathing room!*/
+}
+
+.placeBox {
+    position: relative;
+    max-width: 300px;
+    height: 400px;
+    /*Gives the box a height of 300px and a height of 400px!*/
+    margin: 0 auto;
+    background: #000;
+    margin-top: 30px;
+    /*Gives the infomation inside, alittle more breathing room!*/
+}
+
+.placeBox .imgBx {
+    width: 100%;
+    height: 100%;
+    /*To ensure the images and the text make use of 100% of the width and height*/
+}
+
+.placeBox .imgBx img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.placeBox .content {
+    position: absolute;
+    /*Positon absolute so as to make the content stick with the placeBox*/
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /*To ensure the images and the text make use of 100% of the width and height*/
+    display: flex;
+    align-items: flex-end;
+}
+
+.placeBox .content h3 {
+    position: relative;
+    margin: 0;
+    padding-left: 10px;
+    background: rgba(0, 0, 0, .95);
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    width: 100%;
+    /*The font weight and size is adjusted for dramatical purposes, such as the font-size, font-weight to make it alittle bigger
+    then the content so as to catch the reader eye*/
+    text-align: center;
+}
+
+.placeBox .content h3 span {
+    font-size: 16px;
+    font-weight: 500;
+    /*Ensures all the content nested in span inside of h3 inside content inside place box have a font-size and weight of a respective
+    16px and a 500*/
+}
+
+.sec2 {
+    position: relative;
+    background: url(../Pictures/0.Common-Folder/ThematicFiller-FoggyMountains.jpg);
+    /*Background images*/
+    background-size: cover;
+    /*Stretches for the entire screen*/
+    height: 75vh;
+    /*Ensures all sec2 classes(section 2 - designed for section) all will have a minimum height of 75% of the user screen*/
+}
+
+.sec2 h2 {
+    color: #fff;
+    /*Changes all the text color to be white*/
+    text-transform: uppercase;
+    /*Transforms all the text into upper case for more impact*/
+    font-weight: 800;
+    font-size: 4.5rem;
+    /*Gives the h2 inside the sec2(section2) alittle more weight and more heaviness to standout!*/
+}
+
+.btnD1 {
+    border: 2px solid #fff;
+    /*Ensures all the button border are white in color with a white solid lines*/
+    color: #000;
+    /*Ensures all the text inside button border are black in color*/
+    background: #fff;
+    /*Ensures the background in the button a white background*/
+    border-radius: 50px;
+    /*Gives the button a rounded feel and thus -> less aggressive feel/more calming*/
+    padding: 15px 50px;
+    outline: none;
+    font-size: 1.15rem;
+    font-weight: 500;
+    /*Text style*/
+    margin-top: 20px;
+}
+
+.btnD2, .btnD2:hover {
+    background: #262626;
+    /*Ensures the background in the button a black-grey background*/
+    color: #fff;
+    /*Ensures all the text inside button border are white in color*/
+    border-radius: 30px;
+    /*Gives the button a rounded feel and thus -> less aggressive feel/more calming*/
+    padding: 10px 20px;
+    float: right;
+}
+
+/*------------------------------BACKGROUND REPOSITORIES------------------------------*/
+
+.backgroundSetter1 {
+    background: #1f1e24 url(../Pictures/1.index/features_swiss-based.jpg) no-repeat 70% !important;
+    /*Inset here to change the pictures in the future*/
+    background-size: contain;
+    margin-bottom: 0;
+}
+
+.backgroundSetter2 {
+    background: #1f1e24 url(../Pictures/1.index/features_secure-core.jpg) 25% no-repeat;
+    background-size: contain;
+    margin-bottom: 0;
+}
+
+.backgroundSetter3 {
+    background: #1f1e24 url(../Pictures/1.index/features_easy-to-use.jpg) no-repeat 70% !important;
+    /*Inset here to change the pictures in the future*/
+    background-size: contain;
+    margin-bottom: 0;
+}
+
+.backgroundSetter4 {
+    position: relative;
+    background: #1f1e24 url(../Pictures/2.WhatIsAVPN/Background4-Japan.jpg) no-repeat 70% !important;
+    background-size: contain;
+    /*Inset here to change the pictures in the future*/
+}
+
+.backgroundSetter5 {
+    position: relative;
+    background: #000 url(../Pictures/2.WhatIsAVPN/Background5-Forest.jpg) no-repeat 70% !important;
+    /*Inset here to change the pictures in the future*/
+    background-size: cover;
+}
+
+.backgroundSetter6 {
+    position: relative;
+    background: #000 url(../Pictures/2.WhatIsAVPN/Background6-RainPuddle.jpg) no-repeat 70% !important;
+    /*Inset here to change the pictures in the future*/
+    background-size: cover;
+}
+
+.backgroundSetter7 {
+    position: relative;
+    background: #000 url(../Pictures/2.WhatIsAVPN/Background7-City.jpg) no-repeat 70% !important;
+    /*Inset here to change the pictures in the future*/
+    background-size: cover;
+}
+
+.backgroundSetter8 {
+    position: relative;
+    background: #000 url(../Pictures/0.Common-Folder/ThematicFiller-FoggyMountains.jpg) no-repeat 70% !important;
+    /*Inset here to change the pictures in the future*/
+    background-size: cover;
+}
+
+.backgroundSetter9 {
+    position: relative;
+    background: #000 url(../Pictures/4.Servers/Background9-Asia.jpg) no-repeat 70% !important;
+    /*Inset here to change the pictures in the future*/
+    background-size: cover;
+}
+
+.backgroundSetter10 {
+    position: relative;
+    background: #000 url(../Pictures/4.Servers/Background10-Europe.jpg) no-repeat 70% !important;
+    /*Inset here to change the pictures in the future*/
+    background-size: cover;
+}
+
+.backgroundSetter11 {
+    position: relative;
+    background: #000 url(../Pictures/4.Servers/Background11-America.jpg) no-repeat 70% !important;
+    /*Inset here to change the pictures in the future*/
+    background-size: cover;
+}
+
+.backgroundSetter12 {
+    position: relative;
+    background: #000 url(../Pictures/2.WhatIsAVPN/1592920069656.jpg) no-repeat 70% !important;
+    /*Inset here to change the pictures in the future*/
+    background-size: cover;
+}
+
+/*------------------------------FOOTER------------------------------*/
+
+footer {
+    background: #000;
+    padding: 50px 0 0;
+    /*Makes the footer section entirely black*/
+}
+
+.FooterLi h3 {
+    /*Ensures that even though the h3 that is nested inside the anchor tag does not have a text decoration etc*/
+    color: #fff;
+    list-style: none;
+    text-decoration: none;
+    /*So that About us, social, My account and polciies will be larger than the rest, making it nicer and giving it a structual flow*/
+}
+
+.FooterLi {
+    list-style: none;
+    margin: 0 20px;
+    color: #fff;
+    /*The rest, such as our mission will be white in color to blend in with the rest of the theme*/
+}
+
+.FooterLi a {
+    text-decoration: none;
+    color: #fff;
+    /*The rest, such as our mission will be white in color to blend in with the rest of the theme*/
+}
+
+/*------------------------------FEATURETTE------------------------------*/
+
+.featurette-heading {
+    font-weight: 600;
+    /*Gives the featurette more impact - by giving the weight of the the text to be 600*/
+    line-height: 1;
+    letter-spacing: -.05rem;
+    /*Gives the spacing of the letter a -0.5 rem, so as to make it more digestable*/
+}
+
+.seperator {
+    margin-top: 10rem;
+}
+
+/*------------------------------DETAIL CONTAINER------------------------------*/
+
+.details-container .row {
+    margin-bottom: 5em
+    /*Pushes content below if it by 5em*/
+}
+
+.details-container .row>* {
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: center;
+    justify-content: center;
+    display: -ms-flexbox;
+    display: flex
+}
+
+.details-img {
+    max-width: 100%
+    /*Ensures that the image used is 100% of the size provided to it*/
+}
+
+.details-img-container {
+    -ms-flex-align: center;
+    align-items: center;
+    /*Helps to center images and text to the center*/
+    margin-top: 1em;
+    margin-bottom: 1em
+    /*pushes the content above and beneth of it, so it feels less compressed*/
+}
+
+/*------------------------------FONTAWESOME PICTURES------------------------------*/
+
+.CoolLogo {
+    /*CoolLogo being the icons from font awesome*/
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    /*Align all the images to the center*/
+    align-items: center;
+    /*Align all the images to the center*/
+}
+
+.CoolLogo li {
+    list-style: none;
+    margin: 0 20px;
+    /*I didnt want any . so I typed list-style none to prevent any added features*/
+}
+
+.CoolLogo li a {
+    color: #777;
+    font-size: 2em;
+    transition: 0.5s;
+    /*Gives it a very cool color,like a glowing feel - making it look very cool in the process*/
+}
+
+.CoolLogo li a:hover {
+    color: #fff;
+    /*When hovering on the icons on a computer, this will cause the logo to change to a different color!*/
+}
+
+/*------------------------------COPYRIGHT------------------------------*/
+
+.cpryt {
+    /*This can be evidently seen from "Product of Singapore Poly*/
+    margin-top: 20px;
+    /*Gave it a margin-top to separate it from the Logos like instagram, to not clutter while catching the user attention*/
+    color: #777;
+    /*Gave it a very nice color of greyish-white to make it blend in with black*/
+    text-align: center;
+    /*The text was aligned the center*/
+}
+
+.cpryt a, .cpryt a:hover {
+    color: #fff;
+    /*This can be evidently seen from "Product of Singapore Poly*/
+}
+
+/*------------------------------RESPONSIVITY------------------------------*/
+
+@media (max-width:576px) {
+    .details-container .row {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column-reverse;
+        flex-direction: column-reverse;
+        text-align: center;
+        margin-bottom: 0
+        /*Same as the one listed in detail-container!*/
+    }
+    .details-container figcaption>h3, .details-container figcaption p.no-margin {
+        margin: 1em 0
+        /*gives detail containers a margin of 1em so it is less cluttered, while separating text the "screen" border beside them*/
+    }
+    .details-img {
+        width: inherit
+    }
+}
+
+@media (min-width:992px) {
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+}
+
+@media (max-width:992px) {
+    .navrbar-light .navbar-toggler {
+        background: #fff;
+        border-radius: 0;
+        /*Toggles the nav bar upon scrolling down alttle, setting the hamburger icon to be white so user know how to access it*/
+    }
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+    .banner {
+        min-height: 100vh;
+        padding: 100px 0;
+        /*A banner in which the it is adjusted to 100vh as more content are broken into chunks for these devices with smaller width
+        As such, i needed to fit more lines of text, needing more viewport to fit everything within into a section*/
+    }
+    .contentBox h1, .sec2 {
+        font-size: 2rem;
+        /*Sets the h1 and ,sec2 fontsize to be smaller than their original values to accomodate users with smaller width*/
+    }
+    .contentBox h2 {
+        padding: 10px 0px;
+        /*I gave padding to h2 elements of contentBox to accomodate the different widths and height of a user device that may created this issue*/
+    }
+    .headerText h2 {
+        font-size: 2rem;
+        /*Lowered the font size as well from general specification of 2.5 rem to 2rem*/
+    }
+    .sec1 {
+        padding: 20px 0;
+        /*Lowered the amount of padding gave from a general 100px 0 to 20px 0*/
+    }
+    .sec2 {
+        height: auto;
+        padding: 40px 0;
+        /*As going to mobile, due to some code not working well, they overlap
+        To combat this issue, i gave padding to fix it!*/
+    }
+    .sec2 h2 {
+        font-size: 2rem;
+        /*For this, I also lowered the fontsize from a general specification of 4.5 rem to 2rem to fit more text while not being too big in the user face*/
+    }
+    .section>.container {
+        padding: 110px 15px;
+    }
+    .btnD1 {
+        padding: 10px 40px;
+        margin-top: 10px;
+        /*I lowered the amount of padding gave to the button and as well as the marign-top so users dont have to scroll so much */
+    }
+    /*------------------------------FOOTER------------------------------*/
+    footer {
+        background: #000;
+        padding: 0px 0 20px;
+        /*I gave it a padding so it doesnt stick to the edge*/
+    }
+    .FooterLi li {
+        list-style: none;
+        margin: 10px;
+        /*align the content more to the right inside of being so suffocated*/
+    }
+    .FooterLi li a {
+        color: #777;
+        /*Font color is still the same - greyish color*/
+        font-size: 1.0rem;
+        /*Lowers the font-size so as in order to fit within the user phone/device*/
+        transition: 0.5s;
+        display: block;
+    }
+    .CoolLogo li {
+        list-style: none;
+        margin: 10px;
+        /*Instgram etc logos wont have a list style such as a - or list style,making it cooler*/
+    }
+    .CoolLogo li a {
+        color: #777;
+        font-size: 1.5rem;
+        transition: 0.5s;
+        /*Ensures that the Instagram logo etc still remains small enough to be fitted within a row for the user convinience*/
+    }
+}
+
+@media (max-width:1000px) {
+    #page_vpn-servers .panel .panel-title>a.details {
+        padding-right: 40px
+    }
+}
+
+@media (min-width: 40em) {
+    .featurette-heading {
+        font-size: 50px;
+        /*Decided to give it a fixed font-size of 50px for the featurertt heading at 40em*/
+    }
+}
+
+@media (min-width: 62em) {
+    .featurette-heading {
+        margin-top: 0.75rem;
+        /*Pushes the previous content above it by 0.75 rem so it feels less cluttered*/
+    }
+}
