@@ -1,0 +1,432 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../CSS/bootstrap.min.css" />
+
+    <!--Links the A common stylesheet used across all the webpages,which is 0.stylesheet.css to here-->
+    <link rel="stylesheet" href="../CSS/0.stylesheet.css">
+
+    <!-- Links the Servers css to this -->
+    <link rel="stylesheet" href="../CSS/4.Servers.css">
+
+    <!-- Links font awesome with this - icons such as instagram etc -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <!-- Links the stylesheet with the animation inside -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- Title of the website -->
+    <title>Atlas Servers</title>
+</head>
+
+<!--Nav Bar Creation-->
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+    <header>
+        <!--I chose fixed top in order to constantly stick with the user screen,providing convenience for users-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <!--Company Name-->
+            <a class="navbar-brand" href="#">Atlas</a>
+            <!--Creation of the collapsable hamburger menu-->
+            <button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!--Different options user can access other pages-->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-lg-auto">
+                    <!--ml-lg-auto,mr-auto shifts everything to the right past the lg section-->
+                    <li class="nav-item">
+                        <a class="nav-link" href="1.index.html">Home <span class="sr-only">(current)</span></a>
+                        <!--Nav Bar, to different links that they can access-->
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="2.WhatsAVPN.html">What's a VPN</a>
+                        <!--Nav Bar, to different links that they can access-->
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="3.pricing.html">Pricing</a>
+                        <!--Nav Bar, to different links that they can access-->
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="4.Servers.html">Servers</a>
+                        <!--Nav Bar, to different links that they can access-->
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="5.customerService.html">Contact</a>
+                        <!--Nav Bar, to different links that they can access-->
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!--Banner - I used it primarily for its image as well as its heavy "font weight" i preallocated to it-->
+    <div class="jumbotron jumbotron-fluid height60p banner" id="home">
+        <div class="container h100">
+            <div class="contentBox2 h100">
+                <div class="buffer">
+                    <!--Used to give the the Reasons more noticability - so users are fast to orientate themselves-->
+                    <h1 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">Our Servers</h1>
+                    <!--text for users to familarise themselves with-->
+                    <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">Connect to our secure VPN
+                        servers
+                        and experience secure internet anywhere!</p>
+                    <!--Paragraph that "floats up" to give the illusion that the company/VPN provider is professional and respectable-->
+                </div>
+                <div class="row">
+                    <!--In order to make everything responsive, I have added a class of row so that Countries, Servers and GBPS capacity can be responsive and break accordingly to different breakpoints-->
+                    <div class="col-md-8 offset-md-2">
+                        <!-- -->
+                        <div id="stats">
+                            <!--Class id of stats-->
+                            <div class="stat">
+                                <div class="strong">
+                                    <div class="counter" data-target="50"></div>
+                                    <!--This data will be fed to the incrementor(4.server.js) to be incremented and re-output to here using the value specified by data-target-->
+                                </div>
+                                <span>Countries</span>
+                                <!--A text of countries so that the user can understand what the data we output means-->
+                            </div>
+
+                            <div class="stat">
+                                <div class="strong">
+                                    <div class="counter" data-target="613"></div>
+                                    <!--This data will be fed to the incrementor(4.server.js) to be incremented and re-output to here using the value specified by data-target-->
+                                </div> <span>Servers</span>
+                                <!--A text of countries so that the user can understand what the data we output means-->
+                            </div>
+
+                            <div class="stat">
+                                <div class="strong">
+                                    <div class="counter" data-target="1442"></div>
+                                    <!--This data will be fed to the incrementor(4.server.js) to be incremented and re-output to here using the value specified by data-target-->
+                                </div>
+                                <span>Gbps Capacity</span>
+                                <!--A text of countries so that the user can understand what the data we output means-->
+                            </div>
+
+                        </div>
+                        <p> <a href="#" class="btn btn-outline-success text-uppercase font-weight-bold">See
+                                all servers</a> </p>
+                        <!--This is so that users can choose to see more and the list of all the servers-> i wanted to put to a new page with this servers from asia pacific,
+                        however, i did not specify in my project plan so I decided not to be extra and use it-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--This is the part that we can use for the "Features" of the VPN-->
+
+    <!--Section 1/3-->
+    <section class="sec2 backgroundSetter9 buffer2">
+        <!--I gave it a background for the particular section using a specifc background using backgroundSetter9-->
+        <div class="container h100">
+            <!--I nested it within a container so that everything inside of it will be responsive and nice-->
+            <div class="contentBox h100 col-sm-12">
+                <!--I gave it a view height of 100% of its given viewheight-->
+                <table class="table">
+                    <!--Table class-->
+                    <thead>
+                        <!--Table head class-->
+                        <tr>
+                            <th scope="col">
+                                <p>Asia Pacific</p>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!--Table body class-->
+                        <tr>
+                            <td>
+                                <img class="svgs" src="../Pictures/4.Servers/Asia/singapore-flag.svg"
+                                    alt="Singapore flag">
+                                <p class="svgText"> Singapore</p>
+                                <!--Country flag + text -> gives more details for the users to understand how many servers we have-->
+                            </td>
+                            <td><img class="svgs" src="../Pictures/4.Servers/Asia/brunei-flag.svg" alt="brunei flag">
+                                <p class="svgText"> Brunei</p>
+                                <!--Country flag + text -> gives more details for the users to understand how many servers we have-->
+                            </td>
+                            <td><img class="svgs" src="../Pictures/4.Servers/Asia/china-flag.svg" alt="china flag">
+                                <p class="svgText"> China</p>
+                                <!--Country flag + text -> gives more details for the users to understand how many servers we have-->
+                            </td>
+                            <td><img class="svgs" src="../Pictures/4.Servers/Asia/india-flag.svg" alt="india flag">
+                                <p class="svgText"> India</p>
+                                <!--Country flag + text -> gives more details for the users to understand how many servers we have-->
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img class="svgs" src="../Pictures/4.Servers/Asia/indonesia-flag.svg"
+                                    alt="indonesia flag">
+                                <p class="svgText"> Indonesia</p>
+                                <!--Country flag + text -> gives more details for the users to understand how many servers we have-->
+                            </td>
+                            <td><img class="svgs" src="../Pictures/4.Servers/Asia/japan-flag.svg" alt="japan flag">
+                                <p class="svgText"> Japan</p>
+                                <!--Country flag + text -> gives more details for the users to understand how many servers we have-->
+                            </td>
+                            <td><img class="svgs" src="../Pictures/4.Servers/Asia/laos-flag.svg" alt="laos flag">
+                                <p class="svgText"> Laos</p>
+                                <!--Country flag + text -> gives more details for the users to understand how many servers we have-->
+                            </td>
+                            <td>
+                                <p><a href='#' class="serversAndMore">...and 19 other countries</a></p>
+                                <!--Additional infomation that the people can know by clicking the anchor tag to go to a another website-->
+                            </td>
+                        </tr>
+                    </tbody>
+                    <!--Since i had not added a table footer in my design, i chose not to be extra and add it, as such, we have no table footer-->
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!--Section 2/3-->
+    <section class="sec2 backgroundSetter10">
+        <!--I gave it a background for the particular section using a specifc background using backgroundSetter10-->
+        <div class="container h100">
+            <!--I nested it within a container so that everything inside of it will be responsive and nice-->
+            <div class="contentBox h100 col-sm-12">
+                <!--I gave it a view height of 100% of its given viewheight-->
+                <table class="table">
+                    <!--Table class-->
+                    <thead>
+                        <!--Table head class-->
+                        <tr>
+                            <th scope="col">
+                                <p>Europe</p>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!--Table body class-->
+
+                        <tr>
+                            <td>
+                                <img class="svgs" src="../Pictures/4.Servers/Europe/germany-flag.svg"
+                                    alt="germany flag">
+                                <p class="svgText"> Germany</p>
+                                <!--Country flag + text -> gives more details for the users to understand how many servers we have-->
+                            </td>
+                            <td><img class="svgs" src="../Pictures/4.Servers/Europe/france-flag.svg" alt="france flag">
+                                <p class="svgText"> France</p>
+                                <!--Country flag + text -> gives more details for the users to understand how many servers we have-->
+                            </td>
+                            <td><img class="svgs" src="../Pictures/4.Servers/Europe/switzerland-flag.svg"
+                                    alt="switzerland flag">
+                                <p class="svgText"> switzerland</p>
+                                <!--Country flag + text -> gives more details for the users to understand how many servers we have-->
+                            </td>
+                            <td><img class="svgs" src="../Pictures/4.Servers/Europe/bulgaria-flag.svg"
+                                    alt="bulgaria flag">
+                                <p class="svgText"> Bulgaria</p>
+                                <!--Country flag + text -> gives more details for the users to understand how many servers we have-->
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img class="svgs" src="../Pictures/4.Servers/Europe/poland-flag.svg" alt="poland flag">
+                                <p class="svgText"> Poland</p>
+                                <!--Country flag + text -> gives more details for the users to understand how many servers we have-->
+                            </td>
+                            <td><img class="svgs" src="../Pictures/4.Servers/Europe/czech-republic-flag.svg"
+                                    alt="czech republic flag">
+                                <p class="svgText"> Czechia</p>
+                                <!--Country flag + text -> gives more details for the users to understand how many servers we have-->
+                            </td>
+                            <td><img class="svgs" src="../Pictures/4.Servers/Europe/romania-flag.svg"
+                                    alt="romania flag">
+                                <p class="svgText"> Romania</p>
+                                <!--Country flag + text -> gives more details for the users to understand how many servers we have-->
+                            </td>
+                            <td>
+                                <p><a href='#' class="serversAndMore">...and 5 other countries!</a></p>
+                                <!--Country flag + text -> gives more details for the users to understand how many servers we have-->
+                            </td>
+                        </tr>
+                    </tbody>
+                    <!--Since i had not added a table footer in my design, i chose not to be extra and add it, as such, we have no table footer-->
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!--Section 3/3-->
+    <section class="sec2 backgroundSetter11">
+        <!--I gave it a background for the particular section using a specifc background using backgroundSetter11-->
+        <div class="container h100">
+            <!--I nested it within a container so that everything inside of it will be responsive and nice-->
+            <div class="contentBox h100 col-sm-12">
+                <!--I gave it a view height of 100% of its given viewheight-->
+                <table class="table">
+                    <!--Table class-->
+                    <thead>
+                        <!--Table head class-->
+                        <tr>
+                            <th scope="col">
+                                <p>Americas</p>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!--Table body class-->
+                        <tr>
+                            <td>
+                                <img class="svgs" src="../Pictures/4.Servers/Americas/united-states-of-america-flag.svg"
+                                    alt="United states of America flag">
+                                <p class="svgText"> America</p>
+                                <!--Country flag + text -> gives more details for the users to understand how many servers we have-->
+                            </td>
+                            <td>
+                                <img class="svgs" src="../Pictures/4.Servers/Americas/canada-flag.svg"
+                                    alt="canada flag">
+                                <p class="svgText"> Canada</p>
+                                <!--Country flag + text -> gives more details for the users to understand how many servers we have-->
+                            </td>
+                            <td>
+                                <img class="svgs" src="../Pictures/4.Servers/Americas/mexico-flag.svg"
+                                    alt="mexico flag">
+                                <p class="svgText"> Mexico</p>
+                                <!--Country flag + text -> gives more details for the users to understand how many servers we have-->
+                            </td>
+                            <td>
+                                <img class="svgs" src="../Pictures/4.Servers/Americas/costa-rica-flag.svg"
+                                    alt="costa rica flag">
+                                <p class="svgText"> Costa Rica</p>
+                                <!--Country flag + text -> gives more details for the users to understand how many servers we have-->
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img class="svgs" src="../Pictures/4.Servers/Americas/brazil-flag.svg"
+                                    alt="brazil flag">
+                                <p class="svgText"> Brazil</p>
+                                <!--Country flag + text -> gives more details for the users to understand how many servers we have-->
+                            </td>
+                            <td>
+                                <img class="svgs" src="../Pictures/4.Servers/Americas/argentina-flag.svg"
+                                    alt="argentina flag">
+                                <p class="svgText"> Argentina</p>
+                                <!--Country flag + text -> gives more details for the users to understand how many servers we have-->
+                            </td>
+                            <td>
+                                <img class="svgs" src="../Pictures/4.Servers/Americas/peru-flag.svg" alt="peru flag">
+                                <p class="svgText"> Peru</p>
+                                <!--Country flag + text -> gives more details for the users to understand how many servers we have-->
+                            </td>
+                            <td>
+                                <p><a href='#' class="serversAndMore">...and 13 other countries!</a></p>
+                                <!--Country flag + text -> gives more details for the users to understand how many servers we have-->
+                            </td>
+                        </tr>
+                    </tbody>
+                    <!--Since i had not added a table footer in my design, i chose not to be extra and add it, as such, we have no table footer-->
+                </table>
+            </div>
+            <hr>
+        </div>
+    </section>
+
+    <section class="sec2 backgroundSetter12">
+        <div class="container h100">
+            <div class="contentBox h100">
+                <div class="row">
+                    <a href="#" class="btn btnD1">Find your best server today!</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--FOOTER SECTION!!!-->
+    <footer>
+        <div class="container">
+            <!--I put everything such as ul and li into the container, so that it will be responsive even at different screen sizes-->
+            <div class="row">
+                <!--I gave it col-sm-3 so About us, Social media platforms, My account, and Policies can be spread into 4 equal rows, making it look nice and cool
+                So in order to do that, I had to declear a row above it first-->
+                <div class="col-sm-3">
+                    <ul class="FooterLi">
+                        <!--Column 1 out of 4: About Us section-->
+                        <li class="h3"><a href="#">About Us</a></li>
+                        <li><a href="#">Our mission</a></li>
+                        <li><a href="#">Our founder</a></li>
+                        <li><a href="#">Our story</a></li>
+                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <ul class="FooterLi">
+                        <!--Column 2 out of 4: Social media platform-->
+                        <li class="h3"><a href="#">Social</a></li>
+                        <li><a href="#">Reddit</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">FaceBook</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <ul class="FooterLi">
+                        <!--Column 3 out of 4: My Account-->
+                        <li class="h3"><a href="#">My Account</a></li>
+                        <li><a href="#">Create an account</a></li>
+                        <li><a href="#">Sign In</a></li>
+                        <li><a href="#">Our story</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <ul class="FooterLi">
+                        <!--Column 4 out of 4: Our policies-->
+                        <li class="h3"><a href="#">Policies</a></li>
+                        <li><a href="#">Terms of use</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Our story</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-12">
+                    <ul class="CoolLogo">
+                        <!--Cool Logos - facebook,twitter,googleplus,instagram-->
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <!-- use font awesome -->
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <!-- use font awesome -->
+                        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                        <!-- use font awesome -->
+                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        <!-- use font awesome -->
+                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                        <!-- use font awesome -->
+                    </ul>
+                    <p class="cpryt">Product of Singapore Poly</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- SCRIPTS(DO NOT TOUCH)-->
+    <script src="../JavaScipts/jquery.min.js"></script>
+    <script src="../JavaScipts/popper.min.js"></script>
+    <script src="../JavaScipts/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        $(document).scroll(function () {
+            $('.navbar').toggleClass('scrolled', $(this).scrollTop() > $('.navbar').height());
+        })
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <!--Scripts for the Interval Clock-->
+    <script src="../JavaScipts/4.Servers.js" defer></script>
+    <script src="../JavaScipts/4.Countries.js" defer></script>
+    <script src="../JavaScipts/4.Capacity.js" defer></script>
+</body>
+
+</html>

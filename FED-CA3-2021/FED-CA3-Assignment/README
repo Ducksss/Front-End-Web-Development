@@ -1,0 +1,57 @@
+Additional Features - I have used!
+----------------------------------------------------------------------------------------------------------------------------------------
+1)-> When you scroll, you will see the Nab bar, turning from transparent to black!
+
+2)-> For the Index page, A secure and private access,Protect all your devices etc, actually is using a layered background
+     in order for its effect. I initially tried using a picture beside it to do it, however, due to my inexperience at that point
+     of time(during the 1 week holiday), I figured out it be better to do it! Furthermore, these background also does not clutter
+     the user screen, making it clean and effecient! Its a win win - sleak and effecient
+
+3)-> For Pricing, i used the feature of bootstrap which is card to implement the feature! Very sleak and fast!
+
+4)-> Some of the Headers will also float(intuitive just from looking at it~)
+
+5)-> When hovering over the servers "See all servers button" you will see it glow which is a very cool effect!
+
+6)-> In "Our server" the country flags and And other countries are actually using tables -> though insignifcant but just wanted to point out!
+
+7)-> In contact, if you were looking from a viewport less than 990 in width, the calendar will disappear(too large), however for PC users,
+     due to the large viewport, we implemented a calendar so users can know when to should contact/know when
+     is the best time to contact thew hotline!
+
+8)-> For the footer, I used FontAwesome CDN, so as to give cool logos such as ones from Facebook, twitter, google+, linkedin, and lastly instagram!
+
+9)-> At the popular support topic of 5.customerserivce.html, everything can break, so an a phone can fit 1 at a time, while an ipad can fit 2, while a pc can fit 
+     3 columns at a time!
+
+Validation
+----------------------------------------------------------------------------------------------------------------------------------------
+Validation on HTML :( done )
+Validation on CSS  :( done )
+Validation on JS   :( done )
+
+Dumb mistakes the validator makes but its actually correct: 
+Validator used: http://beautifytools.com/javascript-validator.php
+
+-> ../JavaScipts/1.index.js
+Line	Col	Errors
+1	1	Use the function form of "use strict".
+44	1	Implied eval. Consider passing a function instead of a string.
+3	10	'runClock' is defined but never used.
+1	11	Missing semicolon.
+1	1	'runClock' is not defined.
+
+->  ../JavaScipts/4.Servers.js
+Line	Col	Errors
+1	1	Use the function form of "use strict".
+7	26	'arrow function syntax (=>)' is only available in ES6 (use 'esversion: 6').
+12	26	'arrow function syntax (=>)' is only available in ES6 (use 'esversion: 6').
+
+-> ../JavaScipts/5.calendar.js
+Line	Col	Errors
+1	1	Use the function form of "use strict".
+
+-> ../JavaScipts/5.calendar2.js
+Line	Col	Errors
+1	1	Use the function form of "use strict".
+2	25	The array literal notation [] is preferable.
