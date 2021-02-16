@@ -1,0 +1,133 @@
+@charset "utf-8";
+figure img {
+   display: block;
+   width: 100%;
+}
+
+/* HTML Styles */
+
+html {
+   background-color: #9A9AFC;
+}
+
+/* Article Styles */
+
+body>header {
+   background-color: #BDBDBD;
+   background: linear-gradient(#BDBDBD, #363636 90%);
+   /*Basic*/
+}
+
+body>header>nav {
+   padding-left: 20px;
+   padding-right: 20px;
+}
+
+body>header>nav>ul>li {
+   background: radial-gradient(#C4C5EA, #9C9DA2 80%);
+   border: 5px solid rgb(51, 51, 51);
+   width: 95%;
+}
+
+article header h1 {
+   text-shadow: rgb(181, 211, 181) 2px 2px 1px, /* break formatter*/
+   rgba(21, 21, 21, 0.66) 5px 5px 25px;
+}
+
+/* Page Body Styles */
+
+body {
+   border-left: 1px solid rgb(51, 51, 51);
+   border-right: 1px solid rgb(51, 51, 51);
+   box-shadow: rgb(51, 51, 51) 15px 0px 25px, /* break formatter*/
+   rgb(51, 51, 51) -15px 0px 25px;
+   /* Done*/
+}
+
+/* Aside Styles */
+
+aside {
+   background-color: #BDBDBD;
+   background: linear-gradient(#6F69C6, #343531 99%);
+   border-radius: 5px;
+   /*Basic*/
+}
+
+/* Footer Styles */
+
+footer {
+   background-color: #1816BF;
+   background-color: rgb(24, 21, 193)
+}
+
+/*--------------------------------Pictures Section--------------------------------*/
+
+article {
+   perspective: 600px;
+}
+
+/* Filter Styles */
+
+figure#figure1 {
+   transform: rotateZ(15deg);
+   box-shadow: rgb(101, 101, 101) 10px 10px 25px;
+   border-radius: 15px;
+   filter: saturate(1.5) contrast(1.2)
+   /*Basic*/
+}
+
+figure#figure2 {
+   transform: rotateZ(-15deg);
+   box-shadow: rgb(101, 101, 101) 10px 10px 25px;
+   border-radius: 15px;
+   filter: saturate(1.5) contrast(1.2);
+   /*Basic*/
+}
+
+figure#figure3 {
+   transform: rotateZ(15deg);
+   box-shadow: rgb(101, 101, 101) 10px 10px 25px;
+   border-radius: 15px;
+   filter: saturate(1.5) contrast(1.2);
+   /*Basic*/
+}
+
+figure#figure4 {
+   transform: rotateZ(-15deg);
+   box-shadow: rgb(101, 101, 101) 10px 10px 25px;
+   border-radius: 15px;
+   filter: saturate(1.5) contrast(1.2);
+   /*Basic*/
+}
+
+figure#figure5 {
+   transform: rotateZ(15deg);
+   box-shadow: rgb(101, 101, 101) 10px 10px 25px;
+   border-radius: 15px;
+   filter: saturate(1.5) contrast(1.2);
+   /*Basic*/
+}
+
+figure#figure6 {
+   transform: rotateZ(-15deg);
+   box-shadow: rgb(101, 101, 101) 10px 10px 25px;
+   border-radius: 15px;
+   filter: saturate(1.5) contrast(1.2);
+   /*Basic*/
+}
+
+figure#figure7 {
+   transform: rotateZ(15deg);
+   box-shadow: rgb(101, 101, 101) 10px 10px 25px;
+   border-radius: 15px;
+   filter: saturate(1.5) contrast(1.2);
+   /*Basic*/
+}
+
+figure#figure8 {
+   transform: rotateZ(-15deg);
+   box-shadow: rgb(101, 101, 101) 10px 10px 25px;
+   border-radius: 15px;
+   filter: saturate(1.5) contrast(1.2);
+   /*Basic*/
+}

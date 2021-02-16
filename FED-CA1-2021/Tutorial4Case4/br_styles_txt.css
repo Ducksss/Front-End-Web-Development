@@ -1,0 +1,308 @@
+@charset "utf-8";
+/*
+   New Perspectives on HTML5 and CSS3, 7th Edition
+   Tutorial 4
+   Case Problem 4
+   
+   Browyer Realty Layout Styles
+   Author: Chai Pin Zheng
+   Date: 25/05/2020
+	
+   Filename: br_styles.css
+
+*/
+
+/*strucutual style*/
+
+/* HTML Styles */
+
+html {
+   background-color: #9A9AFC;
+   color: rgb(51, 51, 51);
+   font-size: 12px;
+}
+
+body {
+   background-image: url(br_paper.png);
+   font-family: Verdana, Geneva, Arial, sans-serif;
+   margin-left: auto;
+   margin-right: auto;
+   width: 1020px;
+   /*Basic*/
+}
+
+/*-------------------------------------HEADER-------------------------------------*/
+
+body>header {
+   background-color: #BDBDBD;
+   background: linear-gradient(#BDBDBD, #363636 90%);
+}
+
+body>header>h1 {
+   font-size: 20px;
+}
+
+body>header>img {
+   display: block;
+   width: 100%;
+}
+
+header>nav#mainLinks.horizontal {
+   font-size: 1.2em;
+}
+
+nav#mainLinks ul li {
+   background-color: #A09FA5;
+   border: double;
+   /*Basic*/
+   padding: 10px;
+   display: block;
+   float: left;
+   text-align: center;
+   width: 20%;
+}
+
+nav#mainLinks ul li a {
+   color: white;
+   display: block;
+   height: 2.5em;
+   text-align: center;
+   line-height: 2.5em;
+   transition: 0.2s;
+}
+
+nav#mainLinks a:link, nav#mainLinks a:visited {
+   color: white;
+}
+
+#headerText {
+   background-color: #474747;
+   color: white;
+   font-size: 20px;
+}
+
+p#FirstLine {
+   color: white;
+   font-size: 1.5em;
+   float: right;
+   position: relative;
+   margin-top: -0.4em;
+}
+
+p#SecondLine {
+   color: white;
+   font-size: 2.2em;
+}
+
+p#ThirdLine {
+   color: white;
+   font-size: 1.5em;
+   float: right;
+   position: relative;
+   margin-top: -2.9em;
+}
+
+/*-------------------------------------ARTICLE-------------------------------------*/
+
+article {
+   clear: both;
+   width: 100%;
+}
+
+article header {
+   margin: 20px auto;
+   width: 70%;
+}
+
+article header h1 {
+   color: rgb(98, 160, 82);
+   font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook", "Times New Roman", serif;
+   font-size: 3em;
+   text-align: center;
+}
+
+article::after {
+   clear: both;
+   content: "";
+   display: table;
+}
+
+article>nav.vertical>li {
+   line-height: 2em;
+   color: white;
+}
+
+section#leftColumn {
+   float: right;
+   padding-left: 100px;
+   padding-right: 100px;
+   width: 100%;
+}
+
+section#leftColumn p {
+   font-size: 1.5em;
+   line-height: 1.4em;
+   margin-bottom: 20px;
+   text-align: justify;
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+aside {
+   float: right;
+   padding: 20px;
+   margin-left: 50px;
+}
+
+aside li {
+   font-size: 1.1em;
+   line-height: 1.5em;
+}
+
+aside h4 {
+   color: white;
+   font-weight: normal;
+   font-size: 1em;
+   margin-bottom: 10px;
+   text-align: center;
+}
+
+article>nav#secondaryLinks.horizontal {
+   font-size: 1.2em;
+   margin-left: 4.5em;
+}
+
+nav#secondaryLinks ul li {
+   background-color: #333333;
+   padding: 20px;
+   display: block;
+   float: left;
+   text-align: center;
+   width: 22%;
+}
+
+nav#secondaryLinks ul li a {
+   color: white;
+   display: block;
+   height: 2.5em;
+   text-align: center;
+}
+
+nav#secondaryLinks a:link, nav#secondaryLinks a:visited {
+   color: white;
+}
+
+#leftColumn>ul>li {
+   list-style: circle;
+   font-size: 1.4em;
+}
+
+/*-------------------------------------FIGURES-------------------------------------*/
+
+figure {
+   border-style: double;
+   border-width: 25px;
+   border-image: url(tb_border.png) 50 repeat;
+   /*Basic*/
+   margin: 20px auto 20px;
+   width: 20%;
+}
+
+figure img {
+   display: block;
+   width: 100%;
+}
+
+figure figcaption {
+   font-size: 1.2em;
+   font-style: italic;
+   font-family: Arial, Helvetica, sans-serif;
+   text-align: center;
+   color: black;
+   margin-top: 10px;
+}
+
+figure#figure1, figure#figure2, figure#figure3, figure#figure4 {
+   padding-bottom: 10px;
+   color: gray;
+   border: rgb(51, 51, 51) double 10px;
+   /*Basic*/
+   padding: 20px;
+   display: block;
+   margin-left: 3%;
+   margin-right: 3%;
+   width: 18%;
+   float: left;
+   border-radius: 15px;
+   background: radial-gradient(white, #898B8A 80%);
+   box-shadow: 0 0 20px 10px rgb(51, 91, 51, 0.4);
+   box-shadow: 1px 1px 0 0 rgb(0, 0, 0, 0.2), 2px 2px 0 0 rgb(0, 0, 0, 0.2), 3px 3px 0 0 rgb(0, 0, 0, 0.2), 4px 4px 0 0 rgb(0, 0, 0, 0.2);
+}
+
+figure#figure5, figure#figure6, figure#figure7, figure#figure8 {
+   padding-bottom: 10px;
+   margin: 10px auto;
+   border: rgb(51, 51, 51) double 5px;
+   /*Basic*/
+   padding: 6px;
+   display: block;
+   margin-left: 3%;
+   margin-right: 3%;
+   width: 18%;
+   float: left;
+   border-radius: 15px;
+   background: radial-gradient(white, #898B8A 80%);
+   box-shadow: 0 0 20px 10px rgb(51, 91, 51, 0.4);
+   box-shadow: 1px 1px 0 0 rgb(0, 0, 0, 0.2), 2px 2px 0 0 rgb(0, 0, 0, 0.2), 3px 3px 0 0 rgb(0, 0, 0, 0.2), 4px 4px 0 0 rgb(0, 0, 0, 0.2);
+}
+
+/*-------------------------------------NAVIGATION-------------------------------------*/
+
+nav>ul>li>a:link, nav>ul>li>a:visited {
+   color: rgb(171, 171, 171);
+   text-decoration: none;
+}
+
+nav>ul>li>a:hover, nav>ul>li>a:active {
+   color: rgb(255, 64, 255);
+   text-decoration: underline;
+}
+
+header nav ul li a:hover {
+   color: #255784;
+   background: #2196f3;
+   box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+}
+
+/*-------------------------------------FOOTER-------------------------------------*/
+
+footer {
+   font-size: 12px;
+   font: small-caps bold 0.9em/3em;
+   text-align: right;
+   background-color: #1816BF;
+   color: rgb(231, 240, 225);
+   padding: 15px;
+}
+
+footer>a {
+   color: rgb(231, 240, 225)
+}
+
+footer nav a {
+   text-decoration: underline;
+}
+
+footer::after {
+   clear: both;
+   content: "";
+   display: table;
+}
+
+[id^=breaker] {
+   clear: right;
+}
+
+#finisher {
+   content: none;
+   margin-bottom: 33em;
+}

@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <!--
+      New Perspectives on HTML5 and CSS3, 7th Edition
+      Tutorial 9
+      Case Problem 4
+
+      Philip Henslowe Classic Theatre Payment Form
+      Author: Chai Pin Zheng
+      Date: 31/7/2020      
+
+      Filename:   ph_pay.html
+
+   -->
+
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <title>Ticket Payment Form</title>
+   <link href="ph_base.css" rel="stylesheet" />
+   <link href="ph_layout.css" rel="stylesheet" />
+   <script src="ph_clock_txt.js" defer></script>
+</head>
+
+<body>
+   <header>
+      <img src="ph_logo.png" alt="The Philip Henslowe Classic Theatre" id="imgLogo" />
+      <nav> <a id="navicon" href="#"><img src="ph_navicon.png" alt="" /></a>
+         <ul>
+            <li><a href="#">home</a></li>
+            <li><a href="#">events</a></li>
+            <li><a href="#">calendar</a></li>
+            <li><a href="#">tickets</a></li>
+            <li><a href="#">my cart</a></li>
+         </ul>
+      </nav>
+   </header>
+
+   <section>
+      <h1>Ticket Payment</h1>
+      <form id="pay">
+         <fieldset id="billing">
+            <legend>Billing Information</legend>
+
+            <label>First Name</label>
+            <input name="fName" id="fName" />
+
+            <label>Last Name</label>
+            <input name="lName" id="lName" />
+
+            <label>Street Address</label>
+            <input name="street" id="street" />
+
+            <label>City</label>
+            <input name="city" id="city" />
+
+            <label>State</label>
+            <select name="state" id="state">
+               <option>AL</option>
+               <option>AK</option>
+               <option>AZ</option>
+               <option>AR</option>
+               <option>CA</option>
+               <option>CO</option>
+               <option>CT</option>
+               <option>DE</option>
+               <option>FL</option>
+               <option>GA</option>
+               <option>HI</option>
+               <option selected>ID</option>
+               <option>IL</option>
+               <option>IN</option>
+               <option>IA</option>
+               <option>KS</option>
+               <option>KY</option>
+               <option>LA</option>
+               <option>ME</option>
+               <option>MD</option>
+               <option>MA</option>
+               <option>MI</option>
+               <option>MN</option>
+               <option>MS</option>
+               <option>MO</option>
+               <option>MT</option>
+               <option>NE</option>
+               <option>NV</option>
+               <option>NH</option>
+               <option>NJ</option>
+               <option>NM</option>
+               <option>NY</option>
+               <option>NC</option>
+               <option>ND</option>
+               <option>OH</option>
+               <option>OK</option>
+               <option>OR</option>
+               <option>PA</option>
+               <option>RI</option>
+               <option>SC</option>
+               <option>SD</option>
+               <option>TN</option>
+               <option>TX</option>
+               <option>UT</option>
+               <option>VT</option>
+               <option>VA</option>
+               <option>WA</option>
+               <option>WV</option>
+               <option>WI</option>
+               <option>WY</option>
+            </select>
+
+            <label>Postal Code</label>
+            <input name="zip" id="zip" />
+
+            <label>Country</label>
+            <input name="country" id="country" value="United States" />
+
+            <label>Phone</label>
+            <input name="phone" id="phone" />
+
+         </fieldset>
+
+         <fieldset id="creditcard">
+            <legend>Credit Information</legend>
+
+            <fieldset id="cards">
+               <label class="cardLabel">
+                  <input name="cCard" value="amex" type="radio" />
+                  <img src="ph_amex.png" alt="Diners" />
+               </label>
+               <label class="cardLabel">
+                  <input name="cCard" value="discover" type="radio" />
+                  <img src="ph_discover.png" alt="Discover" />
+               </label>
+               <label class="cardLabel">
+                  <input name="cCard" value="master" type="radio" />
+                  <img src="ph_master.png" alt="MasterCard" />
+               </label>
+               <label class="cardLabel">
+                  <input name="cCard" value="visa" type="radio" />
+                  <img src="ph_visa.png" alt="Visa" />
+               </label>
+            </fieldset>
+
+            <label>Credit Card Number</label>
+            <input name="cardNumber" id="cardNumber" />
+
+            <label>Expiration Date</label>
+            <select name="cardMonth">
+               <option value="">--Month--</option>
+               <option value="01">January (01)</option>
+               <option value="02">February (02)</option>
+               <option value="03">March (03)</option>
+               <option value="04">April (04)</option>
+               <option value="05">May (05)</option>
+               <option value="06">June (06)</option>
+               <option value="07">July (07)</option>
+               <option value="08">August (08)</option>
+               <option value="09">September (09)</option>
+               <option value="10">October (10)</option>
+               <option value="11">November (11)</option>
+               <option value="12">December (12)</option>
+            </select>
+            <select name="cardYear">
+               <option value="">--Year--</option>
+               <option value="2017">2017</option>
+               <option value="2018">2018</option>
+               <option value="2019">2019</option>
+               <option value="2020">2020</option>
+               <option value="2021">2021</option>
+            </select>
+            <label>CVC</label>
+            <input name="cvc" id="cvc" />
+         </fieldset>
+
+         <input type="button" id="subButton" value="Submit" />
+
+      </form>
+
+      <aside>
+         <h1>Tickets to Order</h1>
+         <img src="ph_map.png" alt="map" id="map" />
+         <table>
+            <tr>
+               <th>Event</th>
+               <td><em>Othello</em></td>
+            </tr>
+            <tr>
+               <th>Showing</th>
+               <td>July 20, 2018 @ 8 PM</td>
+            </tr>
+            <tr>
+               <th>Ticket(s)</th>
+               <td>F11, F12, F13, F14</td>
+            </tr>
+            <tr>
+               <th>Price</th>
+               <td>$32.50 &times; 4 = $130.00</td>
+            </tr>
+            <tr>
+               <th>Handling</th>
+               <td>$9.55</td>
+            </tr>
+            <tr>
+               <th>Taxes</th>
+               <td>$7.28</td>
+            </tr>
+            <tr>
+               <th>Total Due</th>
+               <td>$146.83</td>
+            </tr>
+         </table>
+         <h1 id="TimeHead">Time Remaining</h1>
+         <div id="countdown">
+            <span id="minutes"></span>:<span id="seconds"></span>
+         </div>
+      </aside>
+
+   </section>
+
+   <footer>
+      <nav>
+         <ul>
+            <li class="newgroup"><a href="#">Home</a></li>
+            <li><a href="#">Events</a></li>
+            <li><a href="#">Calendar</a></li>
+            <li><a href="#">Tickets</a></li>
+            <li><a href="#">Orders</a></li>
+
+            <li class="newgroup"><a href="#">The Merry Wives of Windsor</a></li>
+            <li><a href="#">A Streetcar Named Desire</a></li>
+            <li><a href="#">Othello</a></li>
+            <li><a href="#">The Importance of Being Earnest</a></li>
+
+            <li class="newgroup"><a href="#">Directions</a></li>
+            <li><a href="#">Gift Shop</a></li>
+            <li><a href="#">Return Policy</a></li>
+            <li><a href="#">On Facebook</a></li>
+            <li><a href="#">On Twitter</a></li>
+
+            <li class="newgroup"><a href="#">Box Office Hours</a></li>
+            <li><a href="#">Contact Us</a></li>
+         </ul>
+      </nav>
+   </footer>
+</body>
+
+</html>

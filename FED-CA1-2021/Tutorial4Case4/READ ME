@@ -1,0 +1,69 @@
+<!---------------------------TO NAVIGATE---------------------------!>
+In order to access the additional requirement, such as br_info2048_txt.html,
+you need to click the "More details" above the footer,in order to access the page of listing 2048!
+
+<addional stuff I have added in>
+I have added extra features such as the navigation bar in the header giving off a neon glow, to make it cooler.
+I have also added an For Agent to make it more semi realistic!
+I have also tried adding box shadows to Nav. so when you hover above it, it will give off a neon line glow.
+
+
+
+<!---------------------------FOR INDEX PAGE---------------------------!>
+Go to the br_styles.css file in your editor and create the layout and design styles 
+to be used in your page. The page design is up to you, but must include at least one
+ example of the following graphic design features:
+
+•(done) A background image
+->line 26
+
+•(done) A border around a page element, including an example of a curved border
+->line 56,201,202,203,226,234,243,251(Border + border radius =>br_styles_txt.css)
+->line 26,38,39,50,71,78,85,92,99,106,113,120(br_visual.css)
+
+•(done) A box shadow around a page element
+->line 236,237,253,254(In styles.css)
+->line 42,73,81,89,97,105,113(br_visual.css)
+
+•(done) A text shadow around a section of element text
+->line 31(br_visual.css)
+->line 28,94(In styles.css)
+
+•(done) A background featuring a linear gradient and a radial gradient
+->line 17,49(In br_visuals.css)
+->line 38(In styles.css)
+
+•(done) Changing the appearance of an element using the transform property
+->line 72,80,88,96,104,112,128(In br_visuals.css)
+
+•(done) Changing the appearance of an element using the filter property
+->line 75,83,91,99,107,115,123(br_visual.css)
+
+
+
+
+<!---------------------------FOR ADDITIONAL PAGE---------------------------!>
+•(done)	A table caption
+->line 108-110(br_info2048.html)
+
+•(done)	Table row and column groups
+->line 124,130,138,145,152,159,167,174,181(Table row)
+->line 1123,113,114,115,116(column groups)
+
+•(done)	Examples of both heading and data cells
+->line 125,131,160 (headings =>br_info2048_txt.html)
+->line 131-135,139-142,146-149,153-156,161-164,168-171,175-178 (Table row =>br_info2048_txt.html)
+
+•(done)	Styling of table and table caption
+->br_styles2.css> line 240-338(styling of table giving it color when it hovers,adding in colors for even/odd rows
+to make it stand out and make it more readable etc...or giving color to the footer so it stands out.)
+->br_styles2.css> line 293(table caption - > giving it an italic font,aligning the font etc.)
+
+
+
+
+
+^All can be found in br_info2048.html,html.br_styles2.css, br_tables2048.css
+<!---------------------------CITATION---------------------------!>
+Text used :
+https://www.realestate.com.au/neighbourhoods?cid=cid:buy:left:homepg:neighbourhoods

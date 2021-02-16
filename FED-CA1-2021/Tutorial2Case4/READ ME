@@ -1,0 +1,68 @@
+<!---------------------------TO NAVIGATE---------------------------!>
+In order to access the additional requirement, such as lake_room.html,
+you need to click the "Rooms and rates" in order to access the page. 
+
+
+
+<!---------------------------FOR BASIC REQUIREMENT---------------------------!>
+Go to the lake_styles.css file in your editor and begin creating the color scheme
+and typographic styles for the lodge’s home page. The final design is up to you 
+but it should include the following features:
+
+•(Done)   Definition of the character encoding used in the style sheet file
+->line 1
+
+•(Done)   Application of a web font (Two fonts are supplied for you in the html02 ► case4 folder.)
+->line 2,8,14 (Lake_styles_txt, but can also be found in lake_rooms.txt)
+
+•Done   Setting background and text colors using both color values and color names
+->line 37, 58,82,183,195,238,260,266,281(Text colors - > in Lake_styles)
+->line 30,32,38,43,44,117,118,160,187,188,221,278,279(Background colors -> in Lake styles)
+
+•Done   An application of a semi-transparent color
+->line 32,80,279
+
+•Done   Selectors showing style rules applied to nested elements, child elements, and elements based on the id attribute
+->In Lake_styles_txt.css
+
+•Done   Styles that modify the appearance of list and list markers
+->line 105,247,255
+
+•Done Use of pseudo-elements and pseudo-classes as selectors
+->line 122,164,202,210,259,265
+
+•(Done) Styles that modify the padding space and margin space around an element
+->line 76,77,146,175,184,283
+->line 62,197,252
+
+•(Done) A style rule to generate content in the rendered page
+->Line 166,203,211
+
+
+
+<!---------------------------FOR ADDITIONAL REQUIREMENT---------------------------!>
+•(Done)	Use of the display property
+->line 68,172,269,286,375
+
+•(Done)	Application of width and height style properties
+->line 69,93,95,97,127,137,144,147,152,153,154,155,156,161,162,163,288(width)
+->line 97,138,139,145,146,155,156,164,165,382,398(height)
+->line 178,350,380(line height)
+
+•(Done)	Floated elements and cleared elements
+->line 91,128,207,220,232,242,255,396(Floated)
+->line 111,170,267,395,408,412,465,481 (cleared elements)
+
+•(Done)	Defined margin and padding spaces as well as maximum and minimum widths
+->line 130,131,132,207,217,228,238,245,251,258,276,299,402,428(margin space)
+->line 57,58,187,263,295,296,321,327,335,454,488(padding space)
+->line 40,41136,146,152,160(usage of min,max width)
+
+•(Done)	An example of relative or absolute positioning
+->line 67,104,222,244,257,285,373,399(Relative)
+->line 445(absolute)
+
+
+<!---------------------------FOR ADDITIONAL FEATURES---------------------------!>
+-
+

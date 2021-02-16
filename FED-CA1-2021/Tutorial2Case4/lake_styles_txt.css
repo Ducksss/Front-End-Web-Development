@@ -1,0 +1,284 @@
+﻿@charset "utf-8";
+@font-face {
+   font-family: DobkinPlain;
+   src: url(DobkinPlain.woff) format("woff"), url(DobkinPlain.ttf) format("ttf");
+   /*#Basic*/
+}
+
+@font-face {
+   font-family: champagne;
+   src: url(cac_champagne.woff) format("woff"), url(cac_champagne.ttf) format("ttf");
+   /*#Basic*/
+}
+
+@font-face {
+   font-family: openSans;
+   src: url(OpenSans-Light.ttf) format("ttf");
+   /*#Basic*/
+}
+
+/* New Perspectives on HTML5 and CSS3, 
+7th Edition Tutorial 2 Case Problem 4 
+Great Lakescape Lodge Style Sheet 
+Author: Chai pin zheng 
+Date: 2/5/2020 
+Filename: lake_styles.css */
+
+/*structural style(general)*/
+
+html {
+   background-color: hsl(27, 72%, 72%);
+   /*Basic*/
+   background-color: hsla(27, 72%, 72%, 0.75);
+   /*#Basic*/
+}
+
+body {
+   color: rgb(91, 91, 91);
+   background-color: #F3C5FF
+   /*#Basic*/
+}
+
+section#leftcol {
+   background-color: ivory;
+   background-color: rgb(255, 255, 240);
+   /*#Basic*/
+}
+
+h1, h2 {
+   letter-spacing: 0.1em;
+}
+
+#hoteltext {
+   font-family: opensans, Georgia, Times, 'Times New Roman', serif;
+   font-size: 1em;
+   position: relative;
+   top: -250px;
+   font-weight: bold;
+   color: white;
+   /*#Basic*/
+   text-transform: none;
+   text-align: center;
+   margin-top: 250px;
+   /*#Additional*/
+}
+
+#doubleroom {
+   position: absolute;
+}
+
+/* Header Navigation*/
+
+body>header>nav {
+   font-family: Arial, Helvetica, sans-serif;
+   vertical-align: middle;
+   font-size: 1.5em;
+   padding-top: 0.7em;
+   padding-bottom: 0.7em;
+   /*#Basic*/
+   /*#Additional*/
+   background-color: hsla(301, 24%, 38%, 0.9);
+   background-color: rgb(120, 73, 119);
+   color: white
+   /*#Basic*/
+}
+
+/* Aside and Blockquote Styles */
+
+aside>h1 {
+   font-size: 1.5em;
+   text-align: center;
+}
+
+section {
+   font-size: 1.4em;
+}
+
+/* Notes and Upcoming Events - below main article - style*/
+
+#content1 h2 {
+   font-size: 1.2em;
+   text-align: center;
+}
+
+#content1>ul>li {
+   list-style-type: circle;
+   /*#Basic*/
+}
+
+#content1 {
+   font-size: 1em;
+   line-height: 1.5em;
+   width: 60em;
+   max-width: 70em;
+   text-decoration: none;
+   font-family: Arial, Helvetica, sans-serif;
+   border-top: 10px solid crimson;
+   background-color: #e3a28d;
+   background-color: rgb(227, 162, 141, 0.95)
+   /*Basic*/
+}
+
+#content1::after {
+   clear: both;
+   content: "";
+   display: table;
+   /*#Basic*/
+   /*#Additional*/
+}
+
+h2#UpComingEvents {
+   font-size: 1.2em;
+   text-align: center;
+}
+
+#content2 h1 {
+   font-size: 1.2em;
+   text-align: center;
+}
+
+#content2>h2 {
+   font-size: 1.0em;
+   text-align: left;
+}
+
+#content2>p {
+   padding-left: 10px;
+   /*#Basic*/
+   font-size: 1em;
+}
+
+#content2 {
+   line-height: 1.4em;
+   content: "\f35a";
+   width: 30em;
+   max-width: 35em;
+   font-family: Arial, Helvetica, sans-serif;
+   vertical-align: baseline;
+   box-sizing: border-box;
+   border-top: 10px solid #8ebf42;
+   background-color: rgb(195, 187, 112);
+   /*Basic*/
+}
+
+#content2::after {
+   clear: both;
+   content: "";
+   display: table;
+   /*#Basic*/
+   /*#Additional*/
+}
+
+/*The main Article/leftcole paragraph and styling*/
+
+#leftcol>h1 {
+   padding-left: 30px;
+   /*#Basic*/
+   font-size: 2.2em;
+   font-family: champagne, DobkinPlain, Arial, Helvetica, sans-serif;
+   font-weight: bold;
+}
+
+#leftcol>p {
+   color: rgb(91, 91, 91);
+   padding-left: 23px;
+   /*#Basic*/
+   font-family: Arial, Helvetica, sans-serif;
+   background-color: ivory;
+   background-color: rgb(255, 255, 240);
+   /*Basic*/
+}
+
+/*Section Blockquotes for rightcol and styling - right of the screen*/
+
+section blockquote {
+   color: rgb(232, 165, 116);
+   /*Basic*/
+   margin: 20px 5px;
+   /*#Basic*/
+   quotes: "\201C" "\201D";
+}
+
+section blockquote::before {
+   content: open-quote;
+   /*#Basic*/
+   font-family: 'Times New Roman', Times, serif;
+   font-size: 2em;
+   font-weight: bold;
+}
+
+section blockquote::after {
+   content: close-quote;
+   /*#Basic*/
+   font-family: 'Times New Roman', Times, serif;
+   font-size: 2em;
+   font-weight: bold;
+}
+
+/* Navigation styling in rightcol - right of the screen*/
+
+section#rightcol {
+   background-color: #F3C5FF;
+   /*#Basic*/
+   position: relative;
+   /*#Additional*/
+   display: block;
+   /*#Additional*/
+}
+
+#rightcol>ul {
+   line-height: 1em;
+   max-height: 1.1em;
+   font-size: 0.8em;
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+#rightcol>blockquote {
+   font-size: 1.1em;
+   color: purple;
+   line-height: 1.5em;
+   /*#Basic*/
+}
+
+body>section>nav>h2 {
+   font-family: DobkinPlain, champagne, Arial, Helvetica, sans-serif;
+   font-size: 1.5em;
+   text-decoration: none;
+   list-style: none;
+   /*#Basic*/
+}
+
+nav>ul>li {
+   margin-top: 5px;
+   /*#Basic*/
+   text-decoration: none;
+   list-style: none;
+   /*#Basic*/
+}
+
+nav>ul>li>a:link, nav>ul>li>a:visited {
+   color: rgb(151, 151, 151);
+   text-decoration: none;
+   /*#Basic*/
+}
+
+nav>ul>li>a:hover, nav>ul>li>a:active {
+   color: rgb(255, 64, 255);
+   text-decoration: underline;
+   /*#Basic*/
+}
+
+/* Footer Styles */
+
+footer {
+   clear: both;
+   font-size: 2em;
+   font: small-caps bold 0.9em/3em Quicksand, Verdana, Geneva, Sans-serif;
+   text-align: center;
+   background-color: hsl(291, 5%, 29%);
+   background-color: hsla(291, 5%, 29%, 0.9);
+   /*#Basic*/
+   color: rgb(231, 240, 225);
+   /*Basic*/
+   padding: 10px 0;
+}

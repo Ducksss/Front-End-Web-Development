@@ -1,0 +1,339 @@
+@charset "utf-8";
+
+@font-face {
+   font-family: Segment14;
+   src: url('segment14.woff') format('woff'),
+        url('segment14.ttf') format('truetype');
+}
+
+/*
+   New Perspectives on HTML and CSS
+   Tutorial 9
+   Case Problem 4
+
+   Philip Henslowe Classic Theatre Layout Style Sheet
+  
+   Filename: ph_layout.css
+   
+   Segment14 font designed by Paul Flo Williams. Download at:
+   http://www.1001fonts.com/segment14-font.html#styles   
+
+*/
+
+
+/* HTML and Body styles */
+
+html {
+   background: url(ph_back.png) center center/cover fixed no-repeat;
+   font-family: Verdana, Geneva, sans-serif;
+   height: 100%;
+}
+
+body {
+   background-color: rgba(255, 255, 255, 0.2);
+   border-left: 1px solid white;
+   border-right: 1px solid white;
+   display: -webkit-flex;
+   display: flex;
+   -webkit-flex-flow: row wrap;
+   flex-flow: row wrap;
+   position: relative;    
+   margin: 0px auto;
+   min-width: 320px;
+   max-width: 1020px;  
+   width: 100%;
+}
+
+/* Header styles */
+
+
+header {
+   background: rgba(108, 88, 64, 0.5);
+   width: 100%;
+}
+
+header img#imgLogo {
+   width: 100%;
+}
+
+
+/* Navigation list styles */
+
+a#navicon {
+   display: none;
+}
+
+header nav ul li {
+   font-size: 1.2em; 
+   line-height: 2.3em; 
+   height: 2.3em;
+   padding: 0px 10px;
+}
+
+header nav {
+   background-color: rgba(106, 88, 64, 0.35);
+   clear: both;
+   width: 100%;
+}
+
+header nav ul li a {
+   color: white;
+   display: block;
+   width: 100%;
+}
+
+header nav ul li a:hover {
+   color: rgb(206, 174, 216);
+   text-shadow: rgb(51, 51, 51) 0px 0px 5px;
+}
+
+a#navicon {
+   display: none;
+}
+
+/* Section Styles */
+
+section {
+   background-color: rgba(255, 255, 255, 0.8);
+   width: 100%;
+   padding: 20px 40px 20px 40px;
+   display: -webkit-flex;
+   display: flex;
+   -webkit-flex-flow: row wrap;
+   flex-flow: row wrap;   
+}
+
+section > h1 {
+   font-size: 2.2em;
+   color: rgb(106, 88, 64);
+   letter-spacing: 0.2em;
+   font-weight: normal;
+   text-shadow: rgba(255, 255, 255, 0.8) 3px 3px 0px;
+   flex: 0 0 100%;
+}
+
+section form {
+   -webkit-flex: 2 1 2400px;
+   flex: 2 1 240px;
+   margin-top: 25px;
+   margin-right: 20px;
+}
+
+/* Aside Styles */
+
+section aside {
+   color: rgb(106, 88, 64);   
+   -webkit-flex: 1 2 161px;
+   flex: 1 2 161px;
+   margin-top: 25px;
+   font-size: 0.8em;
+   padding: 0px 15px;
+}
+
+section aside h1 {
+   font-size: 1.5em;
+   line-height: 1.5em;
+   color: rgb(106, 88, 64);
+   text-align: center;
+   margin-bottom: 10px;
+}
+
+section aside img {
+   display: block;
+   width: 95%;
+   margin: 10px auto;
+}
+
+section aside table {
+   margin-bottom: 30px;
+}
+
+section aside table th {
+   text-align: left;
+   font-weight: bold;
+   padding-right: 30px;
+}
+
+
+/* Styles for the Countdown Clock */
+
+div#countdown {
+   width: 100%;
+   text-align: center;
+   font-size: 3em;
+}
+
+div#countdown span {
+   display: inline-block;
+   padding: 15px;
+   font-family: segment14, sans-serif;
+   background-color: rgba(106, 88, 64, 0.7);
+   color: white;
+   text-align: center;
+   width: 90px;
+}
+
+
+/* Form Layout Styles */
+
+form#pay {
+   background-color: rgba(106, 88, 64, 0.4);
+}
+
+fieldset {
+   border: none;
+}
+
+legend {
+   color: rgba(106, 88, 64, 1);
+   border-bottom: 1px solid rgba(106, 88, 64, 0.5);
+   font-size: 1.1em;
+   margin: 0px auto 10px auto;
+   padding: 8px;
+   width: 80%;
+   text-align: center;
+   text-shadow: 0px 0px 2px white, 0px 0px 5px white, 0px 0px 10px white;   }
+
+
+/* Input and Label Styles */
+
+label {
+   display: block;
+   float: left;
+   clear: left;
+   font-size: 0.9em;
+   margin-bottom: 10px;
+   margin-right: 10px;
+   width: 180px;
+   text-align: right;
+   text-shadow: 0px 0px 2px white, 0px 0px 5px white, 0px 0px 10px white;
+}
+
+form#pay input, form#pay select {
+   display: block;
+   float: left;
+   box-shadow: 0px 0px 15px white;
+}
+
+/* Radio Button Styles */
+
+label.cardLabel {
+   display: inline-block;
+   float: none;
+   width: auto;
+}
+
+
+input[type='radio'] {
+   width: auto;
+   float: none;
+   clear: none;
+}
+
+fieldset#cards {
+   text-align: center;
+}
+
+
+/* Submit Button Style */
+
+form#pay input#subButton {
+   display: block;
+   width: 180px;
+   margin: 10px auto;
+   float: none;
+   clear: left;
+   font-size: 1em;
+   border-radius: 10px;
+}
+
+
+/* Footer Styles */
+
+footer {
+   width: 100%;
+}
+
+footer nav {  
+   background: rgba(106, 88, 64, 0.35);    
+   -moz-column-width: 200px;
+   -webkit-column-width: 200px;
+    column-width: 200px;
+
+   -moz-column-gap: 25px;
+   -webkit-column-gap: 25px;
+    column-gap: 25px;
+    
+    padding: 10px 30px;
+  
+}
+
+footer li.newgroup {
+   margin-top: 12px;
+}
+
+footer a {
+   display: block;
+   color: white;
+   text-decoration: none;
+   font-size: 0.9em;
+}
+
+footer a:hover {
+   text-decoration: underline;
+}
+
+
+/* ===============================
+   Mobile Styles: 0px to 640px 
+   ===============================
+*/
+@media only screen and (max-width: 640px) {
+
+   a#navicon {
+      display: block;
+   }
+   
+   header > img {
+      width: 100%;
+   }
+   
+   header nav ul {
+      display: none;
+   }
+   
+   header nav ul li {
+      font-size: 1em;
+      line-height: 1.3em;
+      height: 1.3em;
+   }
+   
+   section > h1 {
+      line-height: 1.2em;
+   }
+   
+   a#navicon:hover+ul, header nav ul:hover {
+      display: block;
+   }   
+}
+
+/* =============================================
+   Tablet and Desktop Styles: greater than 640px
+   =============================================
+*/
+@media only screen and (min-width: 641px) {
+
+   body header nav ul {
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-flow: row nowrap;
+      flex-flow: row nowrap;
+      -webkit-justify-content: center;
+      justify-content: center;
+   }
+   
+   body header nav ul li {
+      -webkit-flex: 0 1 auto;
+      flex: 0 1 auto;
+   }
+}

@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+   <!--
+    New Perspectives on HTML5 and CSS3, 7th Edition
+    Tutorial 2
+    Case Problem 4
+    
+    The Great Lakescape Lodge
+    Author: 
+    Date:   
+
+    Filename: lake_home.html
+   -->
+   <meta charset="utf-8" />
+   <title>Great Lakescape Lodge</title>
+   <link href="lake_layout.css" rel="stylesheet">
+   <link href="lake_styles_txt.css" rel="stylesheet">
+   <style>
+      img {
+         float: left;
+      }
+   </style>
+</head>
+
+<body>
+
+   <header>
+      <img src="lake_logo.png" alt="Great Lakescape Lodge" />
+      <nav>
+         <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="lake_rooms.html">Rooms &amp; Rates</a></li>
+            <li><a href="#">Dining</a></li>
+            <li><a href="#">Attractions</a></li>
+            <li><a href="#">Directions</a></li>
+            <li><a href="#">Contact Us</a></li>
+         </ul>
+      </nav>
+   </header>
+
+   <section id="leftcol">
+      <h1>Welcome!</h1>
+      <img src="OpeningImage.jpg" alt="hotel pictures">
+      <h2 id=hoteltext>Welcome to Great lakescape Lodge</h2>
+
+      <!-- I tried to incorporating floated elemets + text to make it flow more natually? -->
+      <p>Make the <em>Great Lakescape Lodge</em> your destination in beautiful
+         Door County. Nestled on the shores of Lake Michigan at Bailey's Harbor,
+         our lodge is close to everything that Door County has to offer.</p>
+      <p>We are a family-owned and operated establishment and have been part
+         of the Northern Wisconsin vacation scene for 25 years. The lodge is a great
+         place for a romantic getaway or a family reunion. We also cater weddings
+         and can provide all of the amenities to make your time here a special
+         one.</p>
+      <img id="floatedLakeImg" src="lake_photo1.png" alt="" style="width:24.33em;height:10em;margin-right:15px;">
+      <p>It's our goal to make every guest feel pampered; from the gourmet breakfast
+         and afternoon tea, to the special touches you will find in every room.
+         Families can enjoy our rec room and pool and outdoor equipment for boating
+         and cycling; but there are also quiet secluded spots for people who are
+         just looking to get away for a restful weekend.</p>
+      <p>Come and see for yourself what keeps our guests coming back year
+         after year. We are open April 1st to October 31st. If you have never visited
+         Door County before, let us be your guide to the wonderful opportunities that
+         await you.</p>
+
+
+      <aside id="content1">
+         <h2>Notes</h2>
+         <ul>
+            <li>We now offer Online Reservations.</li>
+            <li>See us featured on <cite><a href="#">Discover Door County</a></cite></li>
+            <li>Befriend us on <a href="#">Facebook</a> for special discounts</li>
+            <li>Watch videos of the lodge on our <a href="#">Youtube Channel</a></li>
+         </ul>
+         
+      </aside>
+
+      <aside id="content2">
+         <h2 id="UpComingEvents">Upcoming Events</h2>
+         <h2>Cycle for Chocolate, 9/6</h2>
+         <p>Join us for 20-mile ride around Bailey's Harbor, touring the
+            sites and stopping for gourmet chocolate.</p>
+         <h2>Square Dance, 9/13</h2>
+         <p>Start dancing at our monthly square dance in the lodge's spacious barn. Music by
+            the Sam Pulvermacher Group.</p>
+         
+
+      </aside>
+
+
+   </section>
+
+   <section id="rightcol">
+      <nav>
+         <h2>The Lodge</h2>
+         <ul>
+            <li><a href="#">Welcome</a></li>
+            <li><a href="#">Accommodations</a></li>
+            <li><a href="#">Great Room</a></li>
+            <li><a href="#">Dining Room</a></li>
+            <li><a href="#">Rec Room</a></li>
+            <li><a href="#">Pool</a></li>
+         </ul>
+         <h2>Information</h2>
+         <ul>
+            <li><a href="#">Rates &amp; Policies</a></li>
+            <li><a href="#">Getaway Packages</a></li>
+            <li><a href="#">Reservations</a></li>
+            <li><a href="#">Wedding Receptions</a></li>
+            <li><a href="#">Directions</a></li>
+            <li><a href="#">Photo Gallery</a></li>
+            <li><a href="#">Contact Info</a></li>
+         </ul>
+         <h2>Door County</h2>
+         <ul>
+            <li><a href="#">Bailey's Harbor</a></li>
+            <li><a href="#">Lighthouse Tour</a></li>
+            <li><a href="#">Dept. of Tourism</a></li>
+            <li><a href="#">Boating</a></li>
+            <li><a href="#">Links</a></li>
+         </ul>
+      </nav>
+
+      <blockquote>
+         I just had to tell you how much my husband and I enjoyed our time at the
+         lodge. The food was excellent and the service was top notch. We look
+         forward to returning next year.
+      </blockquote>
+
+   </section>
+
+   <footer>
+      <em>The Great Lakescape Lodge</em> &#9702;
+      41022 Lakeshore Drive &#9702;
+      Baileys Harbor, WI 54202 &#9702;
+      920.555.9509
+   </footer>
+</body>
+
+</html>

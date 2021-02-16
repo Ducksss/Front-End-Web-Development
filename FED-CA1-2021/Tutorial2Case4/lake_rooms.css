@@ -1,0 +1,493 @@
+@charset "utf-8";
+@font-face {
+   font-family: DobkinPlain;
+   src: url(DobkinPlain.woff) format("woff"), url(DobkinPlain.ttf) format("ttf");
+}
+
+@font-face {
+   font-family: champagne;
+   src: url(cac_champagne.woff) format("woff"), url(cac_champagne.ttf) format("ttf");
+}
+
+@font-face {
+   font-family: openSans;
+   src: url(OpenSans-Light.ttf) format("ttf");
+}
+
+@font-face {
+   font-family: PonaDisplay;
+   src: url(Pona\ Display\ W03\ Bold.ttf) format("ttf");
+}
+
+/* New Perspectives on HTML5 and CSS3, 
+7th Edition Tutorial 2 Case Problem 4 
+Great Lakescape rooms Style Sheet 
+Author: Chai pin zheng 
+Date: 2/5/2020 
+Filename: lake_rooms.css 
+Stylesheet!*/
+
+
+
+/*-------------------------------------HTML STYLES-------------------------------------*/
+
+html {
+   background-color: hsl(27 72% 72%);
+}
+
+body {
+   margin: 0 auto;
+   width: 100%;
+   max-width: 1020px;
+   min-width: 640px;
+   background-color: #F5F5F5;
+}
+
+section#leftcol {
+   background-color: white;
+   background-color: white;
+}
+
+h1, h2 {
+   letter-spacing: 0.1em;
+}
+
+/*-------------------------------------HEADER-------------------------------------*/
+
+body>header>nav {
+   font-family: Arial, Helvetica, sans-serif;
+   vertical-align: middle;
+   font-size: 1.5em;
+   padding-top: 0.7em;
+   padding-bottom: 0.7em;
+   /*#Additional*/
+   background-color: hsl(301, 24%, 38%);
+   background-color: rgb(120, 73, 119);
+   color: white;
+   text-align: center;
+}
+
+body>header nav ul li a {
+   position: relative;
+   display: block;
+   width: 100%;
+   /*#Additional*/
+   color: #2196f3;
+   letter-spacing: 4px;
+   text-decoration: none;
+   font-size: 12px;
+   overflow: hidden;
+   transition: 0.2s;
+   text-align: center;
+}
+
+/*-------------------------------------SECTION-------------------------------------*/
+
+section {
+   font-size: 1.4em;
+}
+
+section>p {
+   text-align: center;
+}
+
+#HotelRoom {
+   float: right;
+   /*#Additional*/
+   min-width: 30em;
+   /*#Additional*/
+   max-width: 50em;
+   /*#Additional*/
+   max-height: 50em;
+   /*#Additional*/
+}
+
+#Hoteltext {
+   font-family: opensans, Arial, Helvetica, sans-serif;
+   font-size: 2em;
+   position: relative;
+   /*Additional*/
+   font-weight: bold;
+   color: white;
+   text-transform: none;
+   text-align: center;
+   top: -250px;
+   clear: both;
+   text-transform: uppercase;
+   letter-spacing: 4px;
+   /*Additional*/
+   /*By the way, this is the ACCOMODATION at the front page. It is positioned relative to the top of the image.
+   */
+}
+
+/*-------------------------------------CONTENT BLOCK-------------------------------------*/
+
+aside>h1 {
+   font-size: 1.5em;
+   text-align: center;
+}
+
+section#leftcol aside {
+   width: 95%;
+   float: left;
+   /*#Additional*/
+   margin-left: 2.5%;
+   margin-right: 2.5%;
+   margin-bottom: 20px;
+   /*#Additional*/
+}
+
+#content1 {
+   min-width: 20em;
+   max-width: 30em;
+   min-height: 20em;
+   max-height: 35em;
+   /*Additional*/
+}
+
+#content2 {
+   min-height: 20em;
+   max-height: 50em;
+   min-width: 20em;
+   max-width: 30em;
+   /*#Additional*/
+}
+
+#content3 {
+   min-width: 20em;
+   max-width: 30em;
+   min-height: 30em;
+   max-height: 50em;
+   /*#Additional*/
+}
+
+#content4 {
+   min-width: 20em;
+   max-width: 30em;
+   min-height: 30em;
+   max-height: 50em;
+   /*#Additional*/
+}
+
+[id^=content]::after {
+   clear: both;
+   content: "";
+   display: table;
+   /*#Additonal*/
+}
+
+[id^=content] {
+   font-size: 1em;
+   line-height: 1.5em;
+   background-color: #F5F5F5;
+   border-top: 2px solid #B35E0A;
+   /*Additional*/
+   font-family: Arial, Helvetica, sans-serif;
+   /*Additional*/
+}
+
+[id^=content]>p {
+   padding-left: 10px;
+   font-size: 1em;
+}
+
+[id^=content] h2 {
+   font-size: 1.2em;
+   font-family: PonaDisplay, Arial, Helvetica, sans-serif;
+   text-align: left;
+}
+
+[id^=content]>ul>li {
+   list-style-type: none;
+   font-size: 0.75em;
+}
+
+[class^=LargeBoldTitle] {
+   font-size: 1.325em;
+}
+
+[id^=top_leftbox] {
+   margin-left: 1em;
+   color: #b35e0a;
+   font-size: 0.7em;
+   float: left;
+   /*#Additional i had to use this because multiple $nbsp does not work haha
+   so i had to float but the result actually turned out to be greater than i thought. All is uniform
+   and is visually pleasing*/
+}
+
+[id^=top_rightbox] {
+   margin-left: 1em;
+   color: #b35e0a;
+   font-size: 0.75em;
+   float: right;
+   /*#Additional*/
+   position: relative;
+   margin-right: 5em;
+   text-transform: uppercase;
+}
+
+[id^=bottom_leftbox] {
+   margin-left: .75em;
+   /*Additional*/
+   color: rgb(91, 91, 91);
+   font-size: 0.7em;
+   float: left;
+   /*#Additional*/
+   text-transform: uppercase;
+}
+
+[id^=bottom_rightbox] {
+   margin-left: 1em;
+   /*Additional*/
+   color: #3a3a3a;
+   font-size: 0.7em;
+   float: right;
+   /*#Additional*/
+   position: relative;
+   margin-right: 5em;
+   /*Additional*/
+   font-size: 100%;
+}
+
+[id^=bottom_rightbox] {
+   margin-left: 1em;
+   /*Additional*/
+   color: #3a3a3a;
+   font-size: 0.7em;
+   float: right;
+   /*#Additional*/
+   position: relative;
+   margin-right: 5em;
+   /*Additional*/
+}
+
+[id^=bottom_rightbox]::after {
+   padding: 30%;
+}
+
+[id^=descriptiontext]::after {
+   clear: both;
+   content: "";
+   display: table;
+   /*#Additonal*/
+}
+
+/*-------------------------------------ASIDE CHECK AVABILITY UTILITY-------------------------------------*/
+
+[id^=booknow] {
+   margin-right: 5em;
+   /*Additional*/
+   font-variant: small-caps;
+   font-size: 13px;
+   font-family: 'Arial Narrow Bold', sans-serif;
+   text-align: center;
+}
+
+[id^=booknow] {
+   position: relative;
+   display: block;
+   /*#Additional*/
+   width: 99.5%;
+   /*#Additional*/
+   text-transform: uppercase;
+   letter-spacing: 4px;
+   text-decoration: none;
+   font-size: .8125em;
+   overflow: hidden;
+   padding-top: 0.5em;
+   padding-bottom: 0.5em;
+   color: #B35E0A;
+   background-color: #F5F5F5;
+   margin-left: 0px;
+   /*Additional*/
+   transition: .25s;
+   border: 2px solid #B35E0A;
+}
+
+[id^=booknow] a {
+   color: #B35E0A;
+   text-decoration: none;
+}
+
+[id^=booknow]:hover {
+   background-color: #B35E0A;
+   color: white;
+}
+
+[id^=booknow] a:hover {
+   background-color: #B35E0A;
+   color: white;
+}
+
+[class^=linebreaker] {
+   padding: 4%;
+}
+
+/*The main Article/leftcole paragraph and styling*/
+
+#leftcol>h1 {
+   padding-left: 30px;
+   font-size: 2.2em;
+   font-family: champagne, DobkinPlain, Arial, Helvetica, sans-serif;
+   font-weight: bold;
+}
+
+#leftcol>p {
+   color: rgb(91, 91, 91);
+   padding-left: 23px;
+   font-family: Arial, Helvetica, sans-serif;
+   background-color: white;
+   background-color: white;
+}
+
+#leftcol>h2 {
+   font-family: PonaDisplay, Arial, Helvetica, sans-serif;
+   text-align: center;
+}
+
+/*-------------------------------------RIGHTCOL BLOCKQUOTES-------------------------------------*/
+
+#rightcol>blockquote {
+   color: purple;
+   line-height: 1.5em;
+   font-family: openSans, champagne, Helvetica, sans-serif;
+   font-size: 1.4em;
+}
+
+section blockquote::before {
+   content: open-quote;
+   font-family: 'Times New Roman', Times, serif;
+   font-size: 2em;
+   font-weight: bold;
+}
+
+section blockquote::after {
+   content: close-quote;
+   font-family: 'Times New Roman', Times, serif;
+   font-size: 2em;
+   font-weight: bold;
+}
+
+/*-------------------------------------RIGHTCOL-------------------------------------*/
+
+section#rightcol {
+   background-color: #F5F5F5;
+   position: relative;
+   /*#Additional*/
+   display: block;
+   /*#Additional*/
+}
+
+#rightcol>ul {
+   line-height: 1em;
+   /*#Additional*/
+   max-height: 1.1em;
+   /*#Additional*/
+   font-size: 0.8em;
+   font-family: Arial, Helvetica, sans-serif;
+   /*#Additional*/
+}
+
+.content1 {
+   background-color: white;
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+img#hotelreview {
+   clear: both;
+   /*#Additional clicking this in browser inspector will show*/
+   height: 3em;
+   position: relative;
+   left: 25%;
+   /*#Additional*/
+   margin: 20px;
+   /*Additional*/
+   border-radius: 50%;
+   float: left;
+}
+
+#reviewby {
+   clear: both
+   /*I have to use clear:both in order to have the text not be blocked by the image. It works*/
+   /*#Additional*/
+}
+
+p.trivago {
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   /*#Additional*/
+   font-style: italic;
+}
+
+body>section>nav>h2 {
+   font-family: DobkinPlain, champagne, Arial, Helvetica, sans-serif;
+   font-size: 1.5em;
+   text-decoration: none;
+   list-style: none;
+}
+
+nav>ul>li {
+   margin-top: 5px;
+   /*Additional*/
+   text-decoration: none;
+   list-style: none;
+}
+
+nav>ul>li>a:link, nav>ul>li>a:visited {
+   color: rgb(151, 151, 151);
+   text-decoration: none;
+}
+
+nav>ul>li>a:hover, nav>ul>li>a:active {
+   color: rgb(255, 64, 255);
+   text-decoration: underline;
+}
+
+/*-------------------------------------BOOK NOW FOLLOWER UTILITY-------------------------------------*/
+
+a#requestbooking {
+   position: fixed;
+   bottom: 0%;
+   /*#Additonal Example of absolute positioning. I used to make a utility for the simplicity if the user want to book
+   anytime, by having it follow the user constantly*/
+   right: 15.6666%;
+   width: 200px;
+   text-align: center;
+   padding: 18px;
+   background-color: #B35E0A;
+   text-decoration: none;
+   font-family: Arial, Helvetica, sans-serif;
+   color: #3a3a3a;
+   text-transform: uppercase;
+   letter-spacing: 4px;
+   font-size: .8125em;
+   overflow: hidden;
+   border: 2px solid #B35E0A;
+   transition: .25s;
+   clear: both;
+}
+
+a#requestbooking:hover {
+   border: 2px solid #ED7703;
+   background-color: #ED7703;
+}
+
+a#requestbooking:active {
+   border: 2px solid;
+   background-color: #fdeec9;
+}
+
+/*-------------------------------------FOOTER-------------------------------------*/
+
+footer {
+   clear: both;
+   /*#Additional -> must include this, if not will shift*/
+   font-size: 2em;
+   font: small-caps bold 0.9em/3em Quicksand, Verdana, Geneva, Sans-serif;
+   text-align: center;
+   background-color: hsl(291 5% 29%);
+   color: rgb(231, 240, 225);
+   padding: 10px 0;
+}
+
+/*---------------------New things to add here. Doesnt mess up previous documentation------------------------*/
