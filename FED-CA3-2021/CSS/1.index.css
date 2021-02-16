@@ -1,0 +1,208 @@
+/*------------------------------JUMBROTRON------------------------------*/
+
+.height50p {
+    height: 50vh;
+    /*Gives the banner a view height of 50 percent of the user scrint - good for strong effects*/
+}
+
+.height100p {
+    height: 100vh;
+    /*Gives the banner a view height of 100 percent of the user scrint - good for strong effects*/
+}
+
+.banner {
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background: url(../Pictures/0.Common-Folder/ThematicFiller-Mountains.jpg);
+    /*Inset here to change the pictures in the future*/
+    background-size: cover;
+    margin-bottom: 0;
+}
+
+/*------------------------------COUNTDOWN(INSIDE OF JUMBOTRON)------------------------------*/
+
+.countdown {
+    margin-top: 50px;
+}
+
+.countdown div {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    /*A width,height and line height of 100px each respectively, so as to give it a very deep and impactful feel
+    less clausterphobic!*/
+    text-align: center;
+    background: #333;
+    /*background of Seconds,Minutes,Hour,Dayss are a grey-black color*/
+    color: #fff;
+    margin: 0 15px;
+    font-size: 3em;
+    font-weight: 500;
+    /*When the number is generated from the JS file of 1.index, this will give them a color of white,
+    a font size of 3em, a font weight of 500 as well*/
+    display: inline-block;
+}
+
+.countdown div:before {
+    content: '';
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+    width: 100%;
+    height: 35px;
+    /*Posotioning of the countdown elements so to make it fit etc*/
+    background: #ff0;
+    /*Gives the color of the Seconds,Minutes,Hour,Days more of a "cautionary color", so users will not hesistate to buy
+    not to mention the coolness it invokes*/
+    color: #333;
+    /*text of Seconds,Minutes,Hour,Dayss are a grey-black color*/
+    font-size: 0.35em;
+    line-height: 35px;
+    font-weight: 300;
+    /*Font-size,line-height, and font weight gives the text feels, for boldness and strongness so as to catch the user eyes*/
+}
+
+.countdown #day:before {
+    content: "Days";
+    display: inline-block;
+    /*i had to feeds the content of days into the countdown:before div tag, so it doesnt interfere with the formatting*/
+}
+
+.countdown #hour:before {
+    content: "Hours";
+    display: inline-block;
+    /*i had to feeds the content of hour into the countdown:before div tag, so it doesnt interfere with the formatting*/
+}
+
+.countdown #minute:before {
+    content: "Minutes";
+    display: inline-block;
+    /*i had to feeds the content of minute into the countdown:before div tag, so it doesnt interfere with the formatting*/
+}
+
+.countdown #second:before {
+    content: "Seconds";
+    display: inline-block;
+    /*i had to feeds the content of second into the countdown:before div tag, so it doesnt interfere with the formatting*/
+}
+
+/*------------------------------BUFFER------------------------------*/
+
+.buffer {
+    padding-top: 4.5rem;
+    /*Its to give items in the jumbotron more room to breathe, by aligning the content not too high up*/
+}
+
+/*------------------------------RESPONSIVITY------------------------------*/
+
+@media (max-width: 767px) {
+    .backgroundSetter1 .section>.container {
+        padding-top: 36px;
+        padding-bottom: 20px;
+    }
+    .backgroundSetter2 .section>.container {
+        padding-top: 36px;
+        padding-bottom: 20px;
+    }
+    .backgroundSetter3 .section>.container {
+        padding-top: 36px;
+        padding-bottom: 20px;
+    }
+}
+
+@media (max-width: 991px) {
+    .section>.container {
+        padding: 110px 15px;
+    }
+}
+
+@media (max-width:992px) {
+    .btnD1 {
+        padding: 10px 40px;
+        margin-top: 10px;
+    }
+    .backgroundSetter1 {
+        background-size: 40% auto;
+        background-position: 100%;
+        /*background setter 1 is exclusive to index1 only*/
+    }
+}
+
+@media (max-width:992px) {
+    .contentBox h1, .sec2 {
+        font-size: 2rem;
+    }
+    #day {
+        margin-bottom: 50px;
+    }
+    .countdown div {
+        position: relative;
+        width: 100px;
+        height: 100px;
+        line-height: 100px;
+        text-align: center;
+        background: #333;
+        /*background of Seconds,Minutes,Hour,Dayss are a grey-black color*/
+        color: #fff;
+        margin: 0 15px;
+        font-size: 3em;
+        font-weight: 500;
+        display: inline-block;
+        /*When the number is generated from the JS file of 1.index, this will give them a color of white,
+    a font size of 3em, a font weight of 500 as well*/
+        /*this is to mainly ensure that when at a user viewport width of less than 900, the elements still scale accordingly and so that it fits
+        Code is mainly the same as the one found at the top*/
+    }
+    .countdown div:before {
+        content: '';
+        position: absolute;
+        bottom: -30px;
+        left: 0;
+        width: 100%;
+        height: 35px;
+        /*Posotioning of the countdown elements so to make it fit etc*/
+        margin-top: 100px;
+        background: #ff0;
+        /*Gives the color of the Seconds,Minutes,Hour,Days more of a "cautionary color", so users will not hesistate to buy
+        not to mention the coolness it invokes*/
+        color: #333;
+        /*text of Seconds,Minutes,Hour,Dayss are a grey-black color*/
+        font-size: 0.35em;
+        line-height: 35px;
+        font-weight: 300;
+        /*Font-size,line-height, and font weight gives the text feels, for boldness and strongness so as to catch the user eyes*/
+        /*this is to mainly ensure that when at a user viewport width of less than 900, the elements still scale accordingly and so that it fits*/
+    }
+    .countdown #day:after {
+        padding-bottom: 15px;
+        content: ""
+        /*Give each other a padding of 15px, to force the "blocks" to go down further to avoid the boxes overlapping*/
+    }
+    .countdown #hour:after {
+        padding: 15px;
+        content: ""
+        /*Give each other a padding of 15px, to force the "blocks" to go down further to avoid the boxes overlapping*/
+    }
+    .buffer {
+        padding-top: 250px;
+        /*Give each other a padding of 15px, to force the "blocks" to go down further to avoid the boxes overlapping*/
+    }
+    .buffer2 {
+        padding-top: 300px;
+        /*Give each other a padding of 15px, to force the "blocks" to go down further to avoid the boxes overlapping*/
+    }
+    .backgroundSetter2 {
+        background: #1f1e24 url(../Pictures/1.index/features_secure-core.jpg) 30% no-repeat !important;
+        background-size: contain;
+        margin-bottom: 0;
+    }
+}
+
+@media (min-width:992px) {
+    .separator {
+        color: black;
+    }
+}
